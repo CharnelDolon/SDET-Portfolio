@@ -92,3 +92,5 @@ pytest -m regression # Full regression suite
 ## CI pipeline
 
 Tests run automatically on every push to `main` and `dev`, on every pull request, and on a daily schedule (weekday mornings). The HTML report is uploaded as a CI artifact after every run.
+
+See [`docs/ci-debugging-case-study.md`](docs/ci-debugging-case-study.md) for a write-up of a real CI outage on this pipeline and how it was diagnosed and fixed.
