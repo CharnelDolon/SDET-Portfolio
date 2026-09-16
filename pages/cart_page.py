@@ -16,6 +16,7 @@ class CartPage(BasePage):
 
     def open_cart(self):
         self.page.click(self.CART_ICON)
+        self.page.wait_for_url("**/cart.html")
 
     def get_cart_item_count(self) -> int:
         return self.page.locator(self.CART_ITEMS).count()

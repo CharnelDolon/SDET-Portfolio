@@ -30,6 +30,7 @@ def logged_in_page(page):
     login = LoginPage(page)
     login.navigate()
     login.login(STANDARD_USER, PASSWORD)
+    page.wait_for_url("**/inventory.html")
     return page
 
 
